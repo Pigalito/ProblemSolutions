@@ -5,8 +5,6 @@
  */
 package meh.fun.Problems_1_10;
 
-import java.math.BigInteger;
-
 /**
  *
  * @author n439081
@@ -56,9 +54,9 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
     long maxValue = 0;
     
     for(int numIndex = 0; numIndex < digits.length - numOfAdjacentDigits; numIndex++){
-      int product = digits[numIndex];
+      long product = digits[numIndex];
       for(int furtherIndex = numIndex + 1; furtherIndex < numIndex + numOfAdjacentDigits; furtherIndex++){
-        product*=digits[furtherIndex];
+        product = product * digits[furtherIndex];
       }
       if(maxValue < product){
         maxValue = product;
