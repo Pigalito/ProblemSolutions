@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package meh.fun;
+package meh.fun.Problems_31_40;
 
 import java.util.HashMap;
 

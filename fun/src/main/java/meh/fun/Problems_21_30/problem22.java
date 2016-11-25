@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package meh.fun;
+package meh.fun.Problems_21_30;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -85,7 +85,7 @@ What is the total of all the name scores in the file?
     for(int i = 0; i<names.size(); i++){
       int totFromChar = characterCount(names.get(i));
       total += totFromChar*(i+1);
-      if(i == 937 || i == 938){
+      if(i == 937){
         System.out.println(names.get(i) + " " + totFromChar*(i+1));
       }
       

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package meh.fun;
+package meh.fun.Problems_61_up;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
