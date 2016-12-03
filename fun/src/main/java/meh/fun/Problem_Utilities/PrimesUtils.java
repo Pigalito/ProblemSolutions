@@ -36,13 +36,13 @@ public class PrimesUtils {
   
   public static Set<Long> generatePrimeFactors(long num){
     Set<Long> primeFactors = new HashSet<>();
-		
-		for(long i=2;i<=num;i++){
-			while(num%i == 0){
-				primeFactors.add(i);
-				num = num/i;
-			}			
-		}
+
+    for(long i=2;i<=num;i++){
+        while(num%i == 0){
+            primeFactors.add(i);
+            num = num/i;
+        }
+    }
     
     return primeFactors;
   }

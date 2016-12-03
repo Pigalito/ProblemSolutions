@@ -20,7 +20,7 @@ What 12-digit number do you form by concatenating the three terms in this sequen
    */
   public static void main(String[] args) {
     
-    for(int firstTerm=10000; firstTerm < 99999; firstTerm++){
+    for(int firstTerm=1000; firstTerm < 9999; firstTerm++){
       
       if(!isPrime(firstTerm))continue;
       
@@ -30,7 +30,7 @@ What 12-digit number do you form by concatenating the three terms in this sequen
       int thirdTerm = firstTerm;
       int aritmeticAddition = 0;
       
-      while(thirdTerm < 100000){
+      while(thirdTerm < 10000){
         
         aritmeticAddition++;
         secondTerm = firstTerm + aritmeticAddition;
@@ -45,7 +45,7 @@ What 12-digit number do you form by concatenating the three terms in this sequen
         String thirdTermNumMask = getNumMaskForNumber(thirdTerm);
         if(!firstTermNumMask.equals(thirdTermNumMask))continue;
         
-        System.out.println(firstTerm + " " + secondTerm + " " + thirdTerm);
+        System.out.println(firstTerm + "" + secondTerm + "" + thirdTerm);
       }
     }
   }
